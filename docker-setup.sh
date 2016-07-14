@@ -12,29 +12,17 @@ curl -L http://mirrors.ircam.fr/pub/apache/maven/maven-3/3.3.9/binaries/apache-m
 
 tar -xf apache-maven-3.3.9-bin.tar.gz
 
-curl -L https://github.com/beabloo/james/archive/apache-james-3.0-beta3.tar.gz > james-project-source.tar.gz
-
-tar -xf james-project-source.tar.gz
-
-cd james-project-*
-
-export MAVEN_OPTS="-Dmaven.repo.local=/tmp/build/m2"
-
-/tmp/build/apache-maven-3.3.1/bin/mvn --batch-mode package -DskipTests -Pwith-assembly,with-jetm
-
-if [ $? -eq 0 ]; then
-   cp server/app/target/james-server-app-*-app.tar.gz /tmp
-fi
+curl -L http://archive.apache.org/dist/james/apache-james/3.0beta3/apache-james-3.0-beta3-app.tar.gz > /tmp/apache-james-3.0-beta3-app.tar.gz
 
 cd /tmp
 
 rm -rf build
 
-tar xf james-server-app-*-app.tar.gz
+tar xf apache-james-*-app.tar.gz
 
-rm -rf james-server-app-*-app.tar.gz
+rm -rf apache-james-*-app.tar.gz
 
-mv james-server-app*/* ${JAMES_HOME}
+mv apache-james-*/* ${JAMES_HOME}
 
 cd ${JAMES_HOME}
 
