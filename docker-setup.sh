@@ -31,9 +31,9 @@ rm bin/wrapper-linux-x86-32
 sed -i 's/wrapper.daemonize=TRUE/wrapper.daemonize=FALSE/' bin/james
 
 # Fix default package cannot execute
-for name in indexer quota events managesieveserver; do
-    cp conf/${name}-template.xml conf/${name}.xml
-done
+# for name in indexer quota events managesieveserver; do
+#     cp conf/${name}-template.xml conf/${name}.xml
+# done
 
 rm -rf /tmp/*
 
