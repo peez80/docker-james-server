@@ -8,9 +8,9 @@ mkdir build/m2
 
 cd build
 
-curl -L http://mirrors.ircam.fr/pub/apache/maven/maven-3/3.3.1/binaries/apache-maven-3.3.1-bin.tar.gz > apache-maven-3.3.1-bin.tar.gz
+curl -L http://mirrors.ircam.fr/pub/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz > apache-maven-3.3.9-bin.tar.gz
 
-tar -xf apache-maven-3.3.1-bin.tar.gz
+tar -xf apache-maven-3.3.9-bin.tar.gz
 
 curl -L https://github.com/beabloo/james/archive/apache-james-3.0-beta3.tar.gz > james-project-source.tar.gz
 
