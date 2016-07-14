@@ -12,7 +12,7 @@ curl -L http://mirrors.ircam.fr/pub/apache/maven/maven-3/3.3.1/binaries/apache-m
 
 tar -xf apache-maven-3.3.1-bin.tar.gz
 
-curl -L https://github.com/apache/james-project/archive/master.tar.gz > james-project-source.tar.gz
+curl -L https://github.com/beabloo/james/archive/apache-james-3.0-beta3.tar.gz > james-project-source.tar.gz
 
 tar -xf james-project-source.tar.gz
 
