@@ -16,5 +16,12 @@ if [ -e /etc/james-server ]; then
 
 fi
 
+if [ -e /etc/james-server-lib ]; then
+
+  for f in /etc/james-server-lib/*; do
+    test -f "$f" && cp $f lib/
+  done
+fi
+  
 bin/james start
 
